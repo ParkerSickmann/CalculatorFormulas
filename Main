@@ -1,25 +1,42 @@
-user_input = input("Enter a number between 0 and 9: ")
+#Formula List
+formulas = "Formula 1 - Area of a square | Formula 2 - Area of a trapezoid | Formula 3 - Area of a circle " 
+
+#The Formulas
+form1 = "b1*b2 or s^2"   #Area of a square
+form2 = "((b1+b2)*h)/2"  #Area of a trapezoid
+form3 = "πr^2"           #Area of a circle
+form4 = "Formula 4"
+form5 = "Formula 5"
+form5 = "Formula 6"
+form5 = "Formula 7"
+form5 = "Formula 8"
+form5 = "Formula 9"
+
+#Gathers User's Input
+user_input = input("Enter a number between  1 and 9. Enter 0 for formula list: ")
+
+#Prints the variable from user's input
 if user_input.isdigit() and 0 <= int(user_input) <= 9:
     num = int(user_input)
     if num == 0:
-        print("You entered zero!")
+        print(formulas)
     elif num == 1:
-        print("You entered one!")
+        print(form1)
     elif num == 2:
-        print("You entered two!")
+        print(form2)
     elif num == 3:
-        print("You entered three!")
+        print(form3)
     elif num == 4:
-        print("You entered four!")
+        print(form4)
     elif num == 5:
-        print("You entered five!")
+        print(form5)
     elif num == 6:
-        print("You entered six!")
+        print(form6)
     elif num == 7:
-        print("You entered seven!")
+        print(form7)
     elif num == 8:
-        print("You entered eight!")
+        print(form8)
     elif num == 9:
-        print("You entered nine!")
+        print(form9)
 else:
     print("You did not enter a number between 0 and 9.")
