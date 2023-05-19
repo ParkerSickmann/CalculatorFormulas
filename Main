@@ -1,3 +1,8 @@
+#Ask for user input 1-9, 0 For list, and 1-9 correspond for differnt things like Surface Area, Volume, Area of 2d shape, Circle stuff (Sectors, Radius, Angles) 
+
+
+#---- Formula Stuff ----
+
 #Formula List
 formulas = "Formula 1 - Area of a square | Formula 2 - Area of a trapezoid | Formula 3 - Area of a circle " 
 
@@ -12,6 +17,8 @@ form5 = "Formula 7"
 form5 = "Formula 8"
 form5 = "Formula 9"
 
+#-----------------------
+
 #Gathers User's Input
 user_input = input("Enter a number between  1 and 9. Enter 0 for formula list: ")
 
@@ -20,23 +27,33 @@ if user_input.isdigit() and 0 <= int(user_input) <= 9:
     num = int(user_input)
     if num == 0:
         print(formulas)
+
     elif num == 1:
         print(form1)
+
     elif num == 2:
         print(form2)
+
     elif num == 3:
         print(form3)
+
     elif num == 4:
         print(form4)
+
     elif num == 5:
         print(form5)
+
     elif num == 6:
         print(form6)
+
     elif num == 7:
         print(form7)
+
     elif num == 8:
         print(form8)
+
     elif num == 9:
         print(form9)
+
 else:
     print("You did not enter a number between 0 and 9.")
