@@ -12,10 +12,10 @@ form2 = "((b1+b2)*h)/2"  #Area of a trapezoid
 form3 = "πr^2"           #Area of a circle
 form4 = "Formula 4"
 form5 = "Formula 5"
-form5 = "Formula 6"
-form5 = "Formula 7"
-form5 = "Formula 8"
-form5 = "Formula 9"
+form6 = "Formula 6"
+form7 = "Formula 7"
+form8 = "Formula 8"
+form9 = "Formula 9"
 
 #-----------------------
 
