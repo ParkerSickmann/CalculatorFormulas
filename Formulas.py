@@ -45,6 +45,12 @@ formV5 = "(4(pi)r^3)/3" #Volume of a Sphere
 
 #-----------------------
 
+#Relationship Between Ratios
+
+ratio = "SR - A:B --- SAR - A^2:B^2 --- VR - A^3:B^3"
+
+
+
 #---- Gathers User's Input ----
 
 first_input = input("Enter a number between  1 and 9. Enter 0 for formula types:")
@@ -198,6 +204,8 @@ if first_input.isdigit() and 0 <= int(first_input) <= 9:
     #Relationship Between Ratios
     elif num == 4:
         print("Relationship Between Ratios")
+        print(Ratio)
+
 
 #---------------------------------------------------------
 
