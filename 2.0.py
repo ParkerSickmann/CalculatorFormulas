@@ -12,7 +12,7 @@ SA_formulas = "Formula 1 - Surface Area of a Prism | Formula 2 - Surface Area of
 formA1 = "b1*b2 or s^2"   #Area of a square
 formA2 = "((b1+b2)*h)/2"  #Area of a trapezoid
 formA3 = "πr^2"           #Area of a circle
-formA4 = "Formula 4"
+formA4 = "(A*P)/2"        #Area of a Pentagon & Above
 formA5 = "Formula 5"
 formA6 = "Formula 6"
 formA7 = "Formula 7"
@@ -20,13 +20,22 @@ formA8 = "Formula 8"
 formA9 = "Formula 9"
 
 #Surface Area Formulas
-formSA1 = "2B+Ph" #Surface Area of a Prism 
-formSA2 = "2(pi)r^2+2(pi)rh" #Surface Area of a Cylinder
-formSA3 = "B+((Pl)/2)" #Surface Area of a Pyramid
-formSA4 = "(pi)r^2+(pi)rl" #Surface Area of a Cone
-formSA5 = "4(pi)r^2" #Surface Area of a Sphere
+formSA1 = "2B+Ph"               #Surface Area of a Prism 
+formSA2 = "2(pi)r^2+2(pi)rh"    #Surface Area of a Cylinder
+formSA3 = "B+((Pl)/2)"          #Surface Area of a Pyramid
+formSA4 = "(pi)r^2+(pi)rl"      #Surface Area of a Cone
+formSA5 = "4(pi)r^2"            #Surface Area of a Sphere
 
-
+#Volume Formulas
+formV1 - "" Volume of a 
+formV2 - "" Volume of a 
+formV3 - "" Volume of a 
+formV4 - "" Volume of a 
+formV5 - "" Volume of a 
+formV6 - "" Volume of a 
+formV7 - "" Volume of a 
+formV8 - "" Volume of a 
+formV9 - "" Volume of a 
 
 #-----------------------
 
@@ -48,10 +57,50 @@ if first_input.isdigit() and 0 <= int(first_input) <= 9:
         print("Formula Types:")
         print(input_types)
 
+#---------------------------------------------------------
+
     #Area Formulas
     elif num == 1:
         print("Area Formulas")
         second_input()
+        if second_input.isdigit() and 1 <= int(second_input) <= 9:
+            num = int(second_input)
+            
+            if num == 0:
+                print(SA_formulas)
+
+            elif num == 1:
+                print("Area of a Square")
+                print(formA1)
+
+            elif num ==  2:
+                print("Area of a Trapezoid")
+                print(formA2)
+
+            elif num ==  3:
+                print("Area of a Circle")
+                print(formA3)
+
+            elif num ==  4:
+                print("Area of a Pentagon and Above")
+                print(formA4)    
+        
+            elif num ==  5:
+                print("Not a valid formula number")
+            
+            elif num ==  6:
+                print("Not a valid formula number")
+            
+            elif num ==  7:
+                print("Not a valid formula number")
+
+            elif num ==  8:
+                print("Not a valid formula number")
+            
+            elif num ==  9:
+                print("Not a valid formula number")
+
+#---------------------------------------------------------
 
     #Surface Area
     elif num == 2:
@@ -63,7 +112,7 @@ if first_input.isdigit() and 0 <= int(first_input) <= 9:
             if num == 0:
                 print(SA_formulas)
 
-            if num == 1:
+            elif num == 1:
                 print("Surface Area of a Prism")
                 print(formSA1)
 
@@ -82,29 +131,57 @@ if first_input.isdigit() and 0 <= int(first_input) <= 9:
             elif num ==  5:
                 print("Surface Area of a Sphere")
                 print(formSA5)
+            
+            elif num ==  6:
+                print("Not a valid formula number")
+            
+            elif num ==  7:
+                print("Not a valid formula number")
+
+            elif num ==  8:
+                print("Not a valid formula number")
+            
+            elif num ==  9:
+                print("Not a valid formula number")
+
+#---------------------------------------------------------
+
     #Volume
     elif num == 3:
         print("Volume Formulas")
         second_input()
 
+#---------------------------------------------------------
+    #Relationship Between Ratios
     elif num == 4:
         print("Relationship Between Ratios")
         second_input()
 
+#---------------------------------------------------------
+
     elif num == 5:
         second_input()
+
+#---------------------------------------------------------
 
     elif num == 6:
         second_input()
 
+#---------------------------------------------------------
+
     elif num == 7:
         second_input()
+
+#---------------------------------------------------------
 
     elif num == 8:
         second_input()
 
+#---------------------------------------------------------
+
     elif num == 9:
         second_input()
+
 
 else:
     print("You did not enter a number between 0 and 9.")
