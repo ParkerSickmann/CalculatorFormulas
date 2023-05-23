@@ -1,20 +1,19 @@
-# Ask for user input 1-9, 0 For list, and 1-9 correspond to different things like Surface Area, Volume, Area of 2D shape, Circle stuff (Sectors, Radius, Angles)
-
 # ---- Formula Stuff ----
 
 # Formula List
 formula_types = "Input 1 - Area | Input 2 - Surface Area | Input 3 - Volume | Input 4 - Relationship Between Ratios "
-area_formulas = "Formula 1 - Area of a square | Formula 2 - Area of a trapezoid | Formula 3 - Area of a circle "
-SA_formulas = "Formula 1 - Surface Area of a Prism | Formula 2 - Surface Area of a Cylinder | Formula 3 - Surface Area of a Pyramid | Formula 4 - Surface Area of a Cone | Formula 5 - Surface Area of a Sphere"
-V_formulas = "Formula 1 - Volume of a Prism | Formula 2 - Volume of a Cylinder | Formula 3 - Volume of a Pyramid | Formula 4 - Volume of a Cone | Formula 5 - Volume of a Sphere"
 
 # Area Formulas
+A_formulas = "Formula 1 - Area of a square | Formula 2 - Area of a trapezoid | Formula 3 - Area of a circle "
+
 formA1 = "b1*b2 or s^2"  # Area of a square
 formA2 = "((b1+b2)*h)/2"  # Area of a trapezoid
 formA3 = "πr^2"  # Area of a circle
 formA4 = "(A*P)/2"  # Area of a Pentagon & Above
 
 # Surface Area Formulas
+SA_formulas = "Formula 1 - Surface Area of a Prism | Formula 2 - Surface Area of a Cylinder | Formula 3 - Surface Area of a Pyramid | Formula 4 - Surface Area of a Cone | Formula 5 - Surface Area of a Sphere"
+
 formSA1 = "2B+Ph"  # Surface Area of a Prism
 formSA2 = "2(pi)r^2+2(pi)rh"  # Surface Area of a Cylinder
 formSA3 = "B+((Pl)/2)"  # Surface Area of a Pyramid
@@ -22,6 +21,8 @@ formSA4 = "(pi)r^2+(pi)rl"  # Surface Area of a Cone
 formSA5 = "4(pi)r^2"  # Surface Area of a Sphere
 
 # Volume Formulas
+V_formulas = "Formula 1 - Volume of a Prism | Formula 2 - Volume of a Cylinder | Formula 3 - Volume of a Pyramid | Formula 4 - Volume of a Cone | Formula 5 - Volume of a Sphere"
+
 formV1 = "B*h"  # Volume of a Prism
 formV2 = "(pi)r^2*h"  # Volume of a Cylinder
 formV3 = "(B*h)/3"  # Volume of a Pyramid
@@ -30,6 +31,8 @@ formV5 = "(4(pi)r^3)/3"  # Volume of a Sphere
 
 # Relationship Between Ratios
 ratio = "SR - A:B --- SAR - A^2:B^2 --- VR - A^3:B^3"
+
+# -----------------------
 
 # ---- Gathers User's Input ----
 
@@ -48,6 +51,7 @@ if first_input.isdigit() and 0 <= int(first_input) <= 9:
 
 #---------------------------------------------------------
 
+    #Formula List
     if num == 0:
         print("Formula Types:")
         print(formula_types)
@@ -62,7 +66,7 @@ if first_input.isdigit() and 0 <= int(first_input) <= 9:
             num = int(second_input())
 
             if num == 0:
-                print(area_formulas)
+                print(A_formulas)
 
             elif num == 1:
                 print("Area of a Square")
