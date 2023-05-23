@@ -3,8 +3,8 @@
 # ---- Formula Stuff ----
 
 # Formula List
-input_types = "Input 1 - Area | Input 2 - Surface Area | Input 3 - Volume | Input 4 - Relationship Between Ratios "
-formulas = "Formula 1 - Area of a square | Formula 2 - Area of a trapezoid | Formula 3 - Area of a circle "
+formula_types = "Input 1 - Area | Input 2 - Surface Area | Input 3 - Volume | Input 4 - Relationship Between Ratios "
+area_formulas = "Formula 1 - Area of a square | Formula 2 - Area of a trapezoid | Formula 3 - Area of a circle "
 SA_formulas = "Formula 1 - Surface Area of a Prism | Formula 2 - Surface Area of a Cylinder | Formula 3 - Surface Area of a Pyramid | Formula 4 - Surface Area of a Cone | Formula 5 - Surface Area of a Sphere"
 V_formulas = "Formula 1 - Volume of a Prism | Formula 2 - Volume of a Cylinder | Formula 3 - Volume of a Pyramid | Formula 4 - Volume of a Cone | Formula 5 - Volume of a Sphere"
 
@@ -13,11 +13,6 @@ formA1 = "b1*b2 or s^2"  # Area of a square
 formA2 = "((b1+b2)*h)/2"  # Area of a trapezoid
 formA3 = "πr^2"  # Area of a circle
 formA4 = "(A*P)/2"  # Area of a Pentagon & Above
-formA5 = "Formula 5"
-formA6 = "Formula 6"
-formA7 = "Formula 7"
-formA8 = "Formula 8"
-formA9 = "Formula 9"
 
 # Surface Area Formulas
 formSA1 = "2B+Ph"  # Surface Area of a Prism
@@ -45,14 +40,19 @@ def second_input():
     user_input = input("Enter a number between 1 and 9. Enter 0 for formula:")
     return user_input
 
+# ------------------------------
 
 # Prints the variable from the user's input
 if first_input.isdigit() and 0 <= int(first_input) <= 9:
     num = int(first_input)
 
+#---------------------------------------------------------
+
     if num == 0:
         print("Formula Types:")
-        print(input_types)
+        print(formula_types)
+
+#---------------------------------------------------------
 
     # Area Formulas
     elif num == 1:
@@ -62,7 +62,7 @@ if first_input.isdigit() and 0 <= int(first_input) <= 9:
             num = int(second_input())
 
             if num == 0:
-                print(SA_formulas)
+                print(area_formulas)
 
             elif num == 1:
                 print("Area of a Square")
@@ -94,6 +94,8 @@ if first_input.isdigit() and 0 <= int(first_input) <= 9:
 
             elif num == 9:
                 print("Not a valid formula number")
+
+#---------------------------------------------------------
 
     # Surface Area
     elif num == 2:
@@ -137,6 +139,8 @@ if first_input.isdigit() and 0 <= int(first_input) <= 9:
             elif num == 9:
                 print("Not a valid formula number")
 
+#---------------------------------------------------------
+
     # Volume
     elif num == 3:
         print("Volume Formulas")
@@ -179,25 +183,38 @@ if first_input.isdigit() and 0 <= int(first_input) <= 9:
             elif num == 9:
                 print("Not a valid formula number")
 
+#---------------------------------------------------------
+
     # Relationship Between Ratios
     elif num == 4:
         print("Relationship Between Ratios")
         print(ratio)
 
+#---------------------------------------------------------
+
     elif num == 5:
         print("Not a formula type")
+
+#---------------------------------------------------------
 
     elif num == 6:
         print("Not a formula type")
 
+#---------------------------------------------------------
+
     elif num == 7:
         print("Not a formula type")
 
+#---------------------------------------------------------
+
     elif num == 8:
         print("Not a formula type")
+#---------------------------------------------------------
 
     elif num == 9:
         print("Not a formula type")
+
+#---------------------------------------------------------
 
 else:
     print("You did not enter a number between 0 and 9.")
