@@ -1,10 +1,21 @@
 # ---- Formula Stuff ----
 
 # Formula List
-formula_types = "Input 1 - Area | Input 2 - Surface Area | Input 3 - Volume | Input 4 - Relationship Between Ratios "
+formula_types = [
+    'Formula 1 - Area',
+    'Formula 2 - Surface Area',
+    'Formula 3 - Volume',
+    'Input 4 - Relationship Between Ratios',
+]  
+
 
 # Area Formulas
-A_formulas = "Formula 1 - Area of a square | Formula 2 - Area of a trapezoid | Formula 3 - Area of a circle "
+A_formulas = [
+    'Formula 1 - Area of a square ',
+    'Formula 2 - Area of a trapezoid',
+    'Formula 3 - Area of a circle',
+    'Formula 4 - Area of a Pentagon & Above',
+]
 
 formA1 = "b1*b2 or s^2"  # Area of a square
 formA2 = "((b1+b2)*h)/2"  # Area of a trapezoid
@@ -12,7 +23,13 @@ formA3 = "πr^2"  # Area of a circle
 formA4 = "(A*P)/2"  # Area of a Pentagon & Above
 
 # Surface Area Formulas
-SA_formulas = "Formula 1 - Surface Area of a Prism | Formula 2 - Surface Area of a Cylinder | Formula 3 - Surface Area of a Pyramid | Formula 4 - Surface Area of a Cone | Formula 5 - Surface Area of a Sphere"
+SA_formulas = [
+    'Formula 1 - Surface Area of a Prism',
+    'Formula 2 - Surface Area of a Cylinder',
+    'Formula 3 - Surface Area of a Pyramid',
+    'Formula 4 - Surface Area of a Cone',
+    'Formula 5 - Surface Area of a Sphere',
+]
 
 formSA1 = "2B+Ph"  # Surface Area of a Prism
 formSA2 = "2(pi)r^2+2(pi)rh"  # Surface Area of a Cylinder
@@ -21,7 +38,13 @@ formSA4 = "(pi)r^2+(pi)rl"  # Surface Area of a Cone
 formSA5 = "4(pi)r^2"  # Surface Area of a Sphere
 
 # Volume Formulas
-V_formulas = "Formula 1 - Volume of a Prism | Formula 2 - Volume of a Cylinder | Formula 3 - Volume of a Pyramid | Formula 4 - Volume of a Cone | Formula 5 - Volume of a Sphere"
+V_formulas = [
+    'Formula 1 - Volume of a Prism',
+    'Formula 2 - Volume of a Cylinder',
+    'Formula 3 - Volume of a Pyramid',
+    'Formula 4 - Volume of a Cone',
+    'Formula 5 - Volume of a Sphere',
+]
 
 formV1 = "B*h"  # Volume of a Prism
 formV2 = "(pi)r^2*h"  # Volume of a Cylinder
@@ -60,7 +83,7 @@ if first_input.isdigit() and 0 <= int(first_input) <= 9:
 
     # Area Formulas
     elif num == 1:
-        print("Area Formulas")
+        print("You've selected 'Area Formulas' select another number 1-9 for specific formula, 0 for the formula list")
         second_input()
         if second_input().isdigit() and 1 <= int(second_input()) <= 9:
             num = int(second_input())
@@ -103,7 +126,7 @@ if first_input.isdigit() and 0 <= int(first_input) <= 9:
 
     # Surface Area
     elif num == 2:
-        print("Surface Area Formulas")
+        print("You've selected 'Surface Area Formulas' select another number 1-9 for specific formula, 0 for the formula list")
         second_input()
         if second_input().isdigit() and 1 <= int(second_input()) <= 9:
             num = int(second_input())
@@ -147,7 +170,7 @@ if first_input.isdigit() and 0 <= int(first_input) <= 9:
 
     # Volume
     elif num == 3:
-        print("Volume Formulas")
+        print("You've selected 'Volume Formulas' select another number 1-9 for specific formula, 0 for the formula list")
         second_input()
         if second_input().isdigit() and 1 <= int(second_input()) <= 9:
             num = int(second_input())
